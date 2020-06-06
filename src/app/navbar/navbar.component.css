@@ -1,0 +1,43 @@
+nav{
+    background: #FFFFFF !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05) !important;
+}
+.logo{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #9D76F0;
+}
+li a {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+p{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+}
+button{
+    background: #9D76F0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 13px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+input {
+border: 1px solid #ECEBED;
+box-sizing: border-box;
+border-radius: 8px;
+width: 60%;
+}

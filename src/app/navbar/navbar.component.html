@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand logo" routerLink="/home"><img src="../../assets/tasky.jpg" alt=""> Tasky</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home"><img src="../../assets/home.jpg" alt=""> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/mytasks"><img src="../../assets/tasks.jpg" alt=""> My tasks</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" routerLink="/done"><img src="../../assets/done.jpg" alt=""> Done</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus px-1"></i>Create new task</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body text-center">
+                  <p class="my-4">What do you want to do?</p>
+                  
+                    <input name="task" [(ngModel)]="task" type="text" class="form-control my-4" placeholder="do something..." aria-describedby="basic-addon1"><br>
+                  
+                  <button type="button" class="btn px-5 my-4" data-dismiss="modal" (click)="submit()"><i class="fas fa-plus px-1"></i>i'll do it</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </nav>
+

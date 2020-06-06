@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="mt-5">Feeling tasky</h1>
+    <p>it's time to clear some of those tasks!! Don't you think?</p>
+
+    <p class="sizeoftasks">{{size}} tasks are waiting.</p>
+    <form >
+        <div class="tasks" *ngFor = "let task of tasks">
+            <input class="mx-3 my-2" type="checkbox" (click) = "remove(task.task_id)">
+            <label for="vehicle1">{{task.label}}</label><br>
+        </div>
+    </form>
+</div> 

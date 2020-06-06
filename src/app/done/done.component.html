@@ -1,0 +1,12 @@
+<div class="container">
+<h1 class="mt-5">Yey !! We're rockin'</h1>
+<p>we did one hell of the job right there !! Bravo six, going dark.</p>
+
+<p class="sizeoftasks">{{size}} are crushed.</p>
+<form >
+    <div class="tasks" *ngFor = "let task of donetasks">
+        <input class="mx-3 my-2" type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+        <label for="vehicle1">{{task.label}}</label><br>
+    </div>
+</form>
+</div>
